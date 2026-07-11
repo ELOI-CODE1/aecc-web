@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+import SiteNav from "../components/SiteNav";
+import SiteFooter from "../components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Projects & Workflow - AAEC Ltd",
+  description:
+    "AAEC Ltd's methodical 8-stage project lifecycle — from consultation and site analysis through detailed design, construction supervision, and final handover.",
+};
+
 const workflowStages = [
   {
     step: "01",
@@ -52,33 +62,7 @@ const workflowStages = [
 export default function WorkflowPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-on-background antialiased">
-      <nav className="sticky top-0 z-50 w-full border-b border-outline-variant bg-surface">
-        <div className="mx-auto flex max-w-container-max items-center justify-between px-md py-sm">
-          <a className="text-display-lg font-bold text-primary transition-transform active:scale-95" href="/">
-            AAEC Ltd
-          </a>
-          <div className="hidden items-center gap-lg md:flex">
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/">
-              Home
-            </a>
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/about">
-              About
-            </a>
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="#">
-              Services
-            </a>
-            <a className="border-b-2 border-secondary pb-1 text-label-md uppercase tracking-wider text-secondary" href="/workflow">
-              Projects/Workflow
-            </a>
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/contact">
-              Contact
-            </a>
-          </div>
-          <button className="hidden rounded bg-primary-container px-md py-sm text-label-md uppercase tracking-wider text-on-primary transition-transform active:scale-95 md:block">
-            Get a Quote
-          </button>
-        </div>
-      </nav>
+      <SiteNav />
 
       <main className="flex-grow">
         <section className="relative overflow-hidden border-b border-outline-variant bg-surface-container-lowest py-xl">
@@ -126,23 +110,7 @@ export default function WorkflowPage() {
         </section>
       </main>
 
-      <footer className="mt-xl w-full border-t border-outline-variant/10 bg-primary text-on-primary">
-        <div className="mx-auto grid max-w-container-max gap-md px-md py-xl md:grid-cols-4">
-          <div className="md:col-span-2">
-            <div className="mb-sm text-headline-sm font-bold text-on-primary">AAEC Ltd</div>
-            <p className="max-w-md text-body-md text-on-primary-fixed-variant opacity-80">
-              © 2024 AAEC Ltd. All rights reserved. Precision in Architecture & Engineering.
-            </p>
-          </div>
-          <div className="flex flex-wrap items-start gap-md md:col-span-2 md:justify-end">
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Privacy Policy</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Terms of Service</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Cookie Policy</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Kigali Office</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Global Partners</a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

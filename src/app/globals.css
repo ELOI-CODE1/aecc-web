@@ -119,6 +119,57 @@
     opacity: 0.5;
   }
 
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .dotted-leader {
+    flex-grow: 1;
+    border-bottom: 2px dotted var(--color-outline-variant);
+    margin: 0 12px;
+    position: relative;
+    top: -6px;
+  }
+
+  .tech-list-leader {
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--color-outline-variant);
+    margin: 0 16px;
+    position: relative;
+    top: -6px;
+  }
+
+  .arch-divider {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-outline-variant);
+  }
+
+  .arch-divider::before,
+  .arch-divider::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    width: 1px;
+    height: 9px;
+    background-color: var(--color-primary);
+    transform: rotate(45deg);
+  }
+
+  .arch-divider::before {
+    left: 0;
+  }
+
+  .arch-divider::after {
+    right: 0;
+  }
+
   /* Custom Typography Utils */
   .text-display-lg {
     font-size: 48px;

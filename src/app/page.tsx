@@ -1,38 +1,11 @@
+import Link from "next/link";
+import SiteNav from "./components/SiteNav";
+import SiteFooter from "./components/SiteFooter";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-surface text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
-      <header className="sticky top-0 z-50 w-full border-b border-outline-variant bg-surface">
-        <div className="mx-auto flex max-w-container-max items-center justify-between px-md py-sm">
-          <a className="text-display-lg font-bold text-primary transition-transform active:scale-95" href="#">
-            AAEC Ltd
-          </a>
-          <nav className="hidden items-center gap-lg md:flex">
-            <a className="relative inline-block text-label-md uppercase tracking-wider text-secondary" href="#">
-              Home
-            </a>
-            <a className="relative inline-block text-label-md uppercase tracking-wider text-on-surface transition-colors duration-200 hover:text-secondary" href="#">
-              About
-            </a>
-            <a className="relative inline-block text-label-md uppercase tracking-wider text-on-surface transition-colors duration-200 hover:text-secondary" href="#">
-              Services
-            </a>
-            <a className="relative inline-block text-label-md uppercase tracking-wider text-on-surface transition-colors duration-200 hover:text-secondary" href="#">
-              Projects/Workflow
-            </a>
-            <a className="relative inline-block text-label-md uppercase tracking-wider text-on-surface transition-colors duration-200 hover:text-secondary" href="#">
-              Contact
-            </a>
-          </nav>
-          <div className="hidden md:block">
-            <button className="rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary transition-colors duration-200 hover:bg-primary active:scale-95">
-              Get a Quote
-            </button>
-          </div>
-          <button className="rounded p-xs text-primary transition-transform active:scale-95 md:hidden">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-      </header>
+      <SiteNav />
 
       <main className="flex-grow">
         <section className="relative flex min-h-[819px] w-full items-center border-b border-outline-variant">
@@ -58,12 +31,12 @@ export default function Home() {
                 Precision engineering and visionary architecture for high-stakes development in the Kigali AEC market. We bring structural integrity to modern design.
               </p>
               <div className="flex flex-wrap gap-md">
-                <button className="rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary shadow-sm shadow-primary/10 transition-colors hover:bg-primary hover:shadow-md">
+                <Link href="/workflow" className="inline-block rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary shadow-sm shadow-primary/10 transition-colors hover:bg-primary hover:shadow-md">
                   Explore Projects
-                </button>
-                <button className="rounded border border-primary bg-surface px-lg py-sm text-label-md uppercase tracking-wider text-primary transition-colors hover:bg-surface-container-low">
+                </Link>
+                <Link href="/contact" className="inline-block rounded border border-primary bg-surface px-lg py-sm text-label-md uppercase tracking-wider text-primary transition-colors hover:bg-surface-container-low">
                   Request Consultation
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -109,44 +82,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="mt-xl w-full border-t border-outline-variant/10 bg-primary text-on-primary">
-        <div className="mx-auto grid max-w-container-max gap-md px-md py-xl md:grid-cols-4">
-          <div className="flex flex-col justify-between md:col-span-2">
-            <div>
-              <a className="mb-md inline-block text-headline-sm font-bold text-on-primary" href="#">
-                AAEC Ltd
-              </a>
-              <p className="mt-sm max-w-sm text-body-md text-on-primary-fixed-variant opacity-80">
-                Precision in Architecture & Engineering. Building the future of modern urban infrastructure.
-              </p>
-            </div>
-            <div className="mt-xl text-body-md text-on-primary-fixed-variant opacity-80">
-              © 2024 AAEC Ltd. All rights reserved.
-            </div>
-          </div>
-          <div className="flex flex-col gap-sm">
-            <span className="mb-sm inline-block w-max border-b border-on-primary/20 pb-xs text-label-md text-on-primary">Company</span>
-            <a className="text-body-md font-bold text-secondary-fixed" href="#">
-              Privacy Policy
-            </a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">
-              Terms of Service
-            </a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">
-              Cookie Policy
-            </a>
-          </div>
-          <div className="flex flex-col gap-sm">
-            <span className="mb-sm inline-block w-max border-b border-on-primary/20 pb-xs text-label-md text-on-primary">Locations</span>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">
-              Kigali Office
-            </a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">
-              Global Partners
-            </a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

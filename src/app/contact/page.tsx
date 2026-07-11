@@ -1,31 +1,18 @@
+import type { Metadata } from "next";
+import SiteNav from "../components/SiteNav";
+import SiteFooter from "../components/SiteFooter";
+
+export const metadata: Metadata = {
+  title: "Contact - AAEC Ltd",
+  description:
+    "Contact AAEC Ltd's engineering and architectural teams at our Kigali, Rwanda headquarters. Submit project parameters or general inquiries to start your build.",
+};
+
 export default function ContactPage() {
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden bg-surface text-on-surface antialiased">
       <div className="pointer-events-none fixed inset-0 z-0 opacity-30 blueprint-grid" />
-      <header className="sticky top-0 z-50 w-full border-b border-outline-variant bg-surface">
-        <div className="mx-auto flex max-w-container-max items-center justify-between px-md py-sm">
-          <a className="text-display-lg font-bold text-primary transition-transform active:scale-95" href="/">
-            AAEC Ltd
-          </a>
-          <nav className="hidden items-center gap-lg md:flex">
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/">
-              Home
-            </a>
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/about">
-              About
-            </a>
-            <a className="text-label-md uppercase tracking-wider text-on-surface transition-colors hover:text-secondary" href="/workflow">
-              Projects/Workflow
-            </a>
-            <a className="border-b-2 border-secondary pb-1 text-label-md uppercase tracking-wider text-secondary" href="/contact">
-              Contact
-            </a>
-          </nav>
-          <button className="hidden rounded bg-primary-container px-md py-sm text-label-md uppercase tracking-wider text-on-primary transition-transform active:scale-95 md:block">
-            Get a Quote
-          </button>
-        </div>
-      </header>
+      <SiteNav />
 
       <main className="relative z-10 flex-grow">
         <section className="mx-auto max-w-container-max px-gutter pb-lg pt-xl">
@@ -145,23 +132,9 @@ export default function ContactPage() {
         </section>
       </main>
 
-      <footer className="relative z-10 mt-xl w-full border-t border-outline-variant/10 bg-primary text-on-primary">
-        <div className="mx-auto grid max-w-container-max gap-md px-md py-xl md:grid-cols-4">
-          <div className="flex flex-col justify-between md:col-span-1">
-            <span className="text-headline-sm font-bold text-on-primary">AAEC Ltd</span>
-            <p className="mt-md text-body-md text-on-primary-fixed-variant opacity-80">
-              © 2024 AAEC Ltd. All rights reserved. Precision in Architecture & Engineering.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-end gap-md md:col-span-3 md:gap-lg">
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Privacy Policy</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Terms of Service</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Cookie Policy</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Kigali Office</a>
-            <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">Global Partners</a>
-          </div>
-        </div>
-      </footer>
+      <div className="relative z-10">
+        <SiteFooter />
+      </div>
     </div>
   );
 }
