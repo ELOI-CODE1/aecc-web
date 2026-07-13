@@ -21,13 +21,13 @@ export default function Home() {
           />
           <div className="absolute inset-0 z-20 bg-gradient-to-r from-surface/90 to-surface/20" />
           <div className="relative z-30 mx-auto w-full max-w-container-max px-md">
-            <div className="max-w-2xl border border-outline-variant bg-surface/95 p-lg backdrop-blur-sm">
+            <div className="w-full border border-outline-variant bg-surface/95 p-lg backdrop-blur-sm">
               <h1 className="mb-md text-display-lg text-primary">
                 Designing Solutions,
                 <br />
                 Building Futures.
               </h1>
-              <p className="mb-lg max-w-xl text-body-lg text-on-surface-variant">
+              <p className="mb-lg w-full whitespace-normal break-words text-body-lg text-on-surface-variant">
                 Precision engineering and visionary architecture for high-stakes development in the Kigali AEC market. We bring structural integrity to modern design.
               </p>
               <div className="flex flex-wrap gap-md">
