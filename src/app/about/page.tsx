@@ -101,7 +101,7 @@ export default function AboutPage() {
               ].map(([icon, title, desc]) => (
                 <div key={title} className="relative flex flex-col items-start bg-surface-container-lowest p-md transition-all duration-300 hover:z-10 hover:shadow-[0_4px_24px_rgba(26,43,60,0.08)]">
                   <span className="mb-md text-2xl text-primary material-symbols-outlined">{icon}</span>
-                  <h3 className="mb-xs text-label-md uppercase tracking-wider text-primary">{title}</h3>
+                  <h3 className="mb-xs text-label-md uppercase tracking-wider text-primary whitespace-normal break-words w-full">{title}</h3>
                   <p className="mt-auto text-caption text-on-surface-variant">{desc}</p>
                 </div>
               ))}
