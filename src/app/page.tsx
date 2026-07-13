@@ -17,9 +17,11 @@ export default function Home() {
                 "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL8gfeeB0hcsiXKF1Vu5xqkSS9N42AupTraC_2bUWcwRrvdYsVJNBQP0m20msvdulv0SDD5zIwKyTinzcpj_AJoYOYQHwlBdpFURIsxHpBSSrqpnyvje1PFqTXfVPisuGxkov06gRv7LZ6_8O6Jp0JxcL16U9vPl7IpizJq-6PJPEk4rCip4txzqmf-vEbIfPv2NxDbnxAWkarqzrXEUaAGul_fZMc-6Y8jED_9pTlrCmnFtc_1oYeg0vCwzxwhf9WzdMtZSyLkZnn')",
               backgroundSize: "cover",
               backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              filter: "contrast(1.1) saturate(1.05)",
             }}
           />
-          <div className="absolute inset-0 z-20 bg-gradient-to-r from-surface/90 to-surface/20" />
+          <div className="absolute inset-0 z-20 bg-gradient-to-r from-surface/80 via-surface/40 to-surface/20" />
           <div className="relative z-30 mx-auto w-full max-w-container-max px-md">
             <div className="w-full border border-outline-variant bg-surface/95 p-lg backdrop-blur-sm">
               <h1 className="mb-md text-display-lg text-primary">
