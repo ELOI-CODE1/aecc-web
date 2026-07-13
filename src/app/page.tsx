@@ -25,7 +25,7 @@ export default function Home() {
           <div className="relative z-30 mx-auto w-full max-w-container-max px-md">
             <div className="w-full border border-outline-variant bg-surface/95 p-lg backdrop-blur-sm">
               <h1 className="mb-md text-display-lg text-primary">
-                Designing Solutions,
+                Designing Solutieons,
                 <br />
                 Building Futures.
               </h1>
