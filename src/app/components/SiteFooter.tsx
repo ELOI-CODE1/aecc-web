@@ -14,7 +14,7 @@ export default function SiteFooter() {
             </p>
           </div>
           <div className="mt-xl text-body-md text-on-primary-fixed-variant opacity-80">
-            © 2024 AAEC Ltd. All rights reserved.
+            © 2026 AAEC Ltd. All rights reserved.
           </div>
         </div>
 
@@ -40,9 +40,9 @@ export default function SiteFooter() {
           <Link href="/contact" className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary">
             Kigali Office
           </Link>
-          <a className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary" href="#">
-            Global Partners
-          </a>
+          <Link href="/contact" className="text-body-md text-on-primary-fixed-variant underline transition-all hover:text-on-primary">
+            Contact
+          </Link>
         </div>
       </div>
     </footer>

@@ -18,9 +18,9 @@ export default function ContactPage() {
         <section className="mx-auto max-w-container-max px-gutter pb-lg pt-xl">
           <div className="relative">
             <div className="absolute bottom-0 right-0 h-8 w-8 border-r border-t border-outline-variant" />
-            <h1 className="mb-sm text-display-lg text-primary">Initiate Protocol.</h1>
+            <h1 className="mb-sm text-display-lg text-primary">Get in Touch</h1>
             <p className="max-w-2xl text-body-lg text-on-surface-variant">
-              Engage our engineering and architectural teams. Submit project parameters or general inquiries below to establish contact with our Kigali headquarters.
+              Tell us about your project and our Kigali-based team will respond quickly with the best architectural, structural, or planning support.
             </p>
           </div>
         </section>
@@ -59,8 +59,8 @@ export default function ContactPage() {
                   <textarea id="message" rows={5} className="w-full resize-y rounded-none border border-outline-variant bg-transparent p-sm text-body-md text-on-surface outline-none transition-colors focus:border-secondary-container focus:ring-1 focus:ring-secondary-container" placeholder="Detail your project requirements or questions here..." />
                 </div>
                 <div className="pt-sm">
-                  <button type="button" className="inline-flex items-center gap-xs rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary transition-colors hover:bg-tertiary-container active:scale-95">
-                    Submit Specifications
+                  <button type="submit" className="inline-flex items-center gap-xs rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary transition-colors hover:bg-tertiary-container active:scale-95">
+                    Send Inquiry
                     <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </button>
                 </div>
@@ -86,12 +86,12 @@ export default function ContactPage() {
                   <span className="text-right">Gasabo</span>
                 </li>
                 <li className="flex w-full items-baseline">
-                  <span className="font-bold">Comm Channel</span>
+                  <span className="font-bold">Phone</span>
                   <div className="dotted-leader" />
                   <span className="text-right">+250 788 000 000</span>
                 </li>
                 <li className="flex w-full items-baseline">
-                  <span className="font-bold">Data Link</span>
+                  <span className="font-bold">Email</span>
                   <div className="dotted-leader" />
                   <span className="text-right">contact@aaec.ltd</span>
                 </li>

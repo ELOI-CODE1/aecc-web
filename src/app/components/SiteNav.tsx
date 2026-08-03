@@ -8,7 +8,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Projects/Workflow", href: "/workflow" },
+  { label: "Workflow", href: "/workflow" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -50,7 +50,7 @@ export default function SiteNav() {
             href="/contact"
             className="inline-block rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary transition-colors duration-200 hover:bg-primary active:scale-95"
           >
-            Get a Quote
+            Request Consultation
           </Link>
         </div>
 
@@ -87,7 +87,7 @@ export default function SiteNav() {
               onClick={() => setOpen(false)}
               className="mt-sm inline-block rounded bg-primary-container px-lg py-sm text-center text-label-md uppercase tracking-wider text-on-primary transition-colors hover:bg-primary"
             >
-              Get a Quote
+              Request Consultation
             </Link>
           </div>
         </nav>

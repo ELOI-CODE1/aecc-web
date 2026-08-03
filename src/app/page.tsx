@@ -25,16 +25,16 @@ export default function Home() {
           <div className="relative z-30 mx-auto w-full max-w-container-max px-md">
             <div className="w-full border border-outline-variant bg-surface/95 p-lg backdrop-blur-sm">
               <h1 className="mb-md text-display-lg text-primary">
-                Designing Solutieons,
+                Designing Solutions,
                 <br />
                 Building Futures.
               </h1>
               <p className="mb-lg w-full whitespace-normal break-words text-body-lg text-on-surface-variant">
-                Precision engineering and visionary architecture for high-stakes development in the Kigali AEC market. We bring structural integrity to modern design.
+                Kigali-first architecture and structural engineering for commercial and residential developments. We combine local insight with technical precision to deliver safe, efficient, and elegant buildings.
               </p>
               <div className="flex flex-wrap gap-md">
                 <Link href="/workflow" className="inline-block rounded bg-primary-container px-lg py-sm text-label-md uppercase tracking-wider text-on-primary shadow-sm shadow-primary/10 transition-colors hover:bg-primary hover:shadow-md">
-                  Explore Projects
+                  View Our Process
                 </Link>
                 <Link href="/contact" className="inline-block rounded border border-primary bg-surface px-lg py-sm text-label-md uppercase tracking-wider text-primary transition-colors hover:bg-surface-container-low">
                   Request Consultation

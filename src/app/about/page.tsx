@@ -21,18 +21,18 @@ export default function AboutPage() {
               <h1 className="mb-md text-display-lg text-primary">Company Overview</h1>
               <div className="mb-md h-px w-16 bg-secondary tick-divider text-secondary" />
               <p className="mb-md max-w-2xl text-body-lg text-on-surface-variant">
-                African Architecture & Engineering Consult (AAEC) Ltd is a highly specialized Rwandan firm established in May 2014. We provide comprehensive architectural, structural engineering, environmental, and project management services for high-stakes developments.
+                African Architecture & Engineering Consult (AAEC) Ltd is a Kigali-based firm founded in May 2014. We deliver architectural, structural engineering, environmental, and project management services for residential, commercial, and institutional developments.
               </p>
               <p className="mb-lg max-w-2xl text-body-md text-on-surface-variant">
-                Our structural minimalism approach ensures precision and integrity in every project, contributing significantly to the modern urban development and infrastructure of Rwanda and beyond.
+                Our approach combines local market knowledge with rigorous technical oversight, ensuring every project is safe, efficient, and responsive to Rwanda’s evolving built environment.
               </p>
               <div className="flex gap-md">
                 <div className="flex-1 border border-outline-variant bg-surface-container-lowest p-md">
-                  <span className="mb-xs block text-display-lg text-primary">10+</span>
+                  <span className="mb-xs block text-display-lg text-primary">12+</span>
                   <span className="text-label-md uppercase tracking-wider text-on-surface-variant">Years Exp.</span>
                 </div>
                 <div className="flex-1 border border-outline-variant bg-surface-container-lowest p-md">
-                  <span className="mb-xs block text-display-lg text-primary">KGL</span>
+                  <span className="mb-xs block text-display-lg text-primary">Kigali</span>
                   <span className="text-label-md uppercase tracking-wider text-on-surface-variant">HQ Location</span>
                 </div>
               </div>
