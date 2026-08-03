@@ -14,7 +14,7 @@ export default function Home() {
             className="absolute inset-0 z-10"
             style={{
               backgroundImage:
-                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDL8gfeeB0hcsiXKF1Vu5xqkSS9N42AupTraC_2bUWcwRrvdYsVJNBQP0m20msvdulv0SDD5zIwKyTinzcpj_AJoYOYQHwlBdpFURIsxHpBSSrqpnyvje1PFqTXfVPisuGxkov06gRv7LZ6_8O6Jp0JxcL16U9vPl7IpizJq-6PJPEk4rCip4txzqmf-vEbIfPv2NxDbnxAWkarqzrXEUaAGul_fZMc-6Y8jED_9pTlrCmnFtc_1oYeg0vCwzxwhf9WzdMtZSyLkZnn')",
+                "url('https://images.pexels.com/photos/5505125/pexels-photo-5505125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
