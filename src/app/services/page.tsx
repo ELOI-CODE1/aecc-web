@@ -111,11 +111,13 @@ export default function ServicesPage() {
             <div className="h-full w-px bg-outline" />
           </div>
           <div className="relative z-10 mx-auto flex max-w-container-max flex-col items-center justify-between gap-md px-md py-xl md:flex-row">
-            <div className="max-w-xl">
-              <h2 className="mb-xs text-headline-md text-primary">Have a project in mind?</h2>
-              <p className="text-body-md text-on-surface-variant">
-                Engage our engineering and architectural teams to scope your next build.
-              </p>
+            <div className="flex flex-col gap-sm md:flex-row md:items-center md:gap-lg">
+              <div className="max-w-xl">
+                <h2 className="mb-xs text-headline-md text-primary">Have a project in mind?</h2>
+                <p className="text-body-md text-on-surface-variant">
+                  Engage our engineering and architectural teams to scope your next build.
+                </p>
+              </div>
             </div>
             <a
               href="/contact"
