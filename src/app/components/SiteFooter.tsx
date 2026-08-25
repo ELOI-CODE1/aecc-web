@@ -3,9 +3,13 @@ import Link from "next/link";
 export default function SiteFooter() {
   return (
     <footer className="mt-xl w-full border-t border-outline-variant/10 bg-primary text-on-primary">
-      <div className="mx-auto flex flex-col gap-md px-md py-xl md:flex-row md:items-start md:justify-between">
+      <div className="mx-auto flex w-full max-w-container-max flex-col gap-lg px-md py-xl md:flex-row md:items-start md:justify-between">
+        <div className="max-w-sm">
+          <div className="font-montserrat text-headline-sm font-bold text-on-primary">AAEC Ltd</div>
+          <p className="mt-sm text-body-md text-on-primary-fixed-variant">Architecture and engineering for a changing East Africa.</p>
+        </div>
         <div className="flex flex-col justify-between md:col-span-2">
-          <div className="mt-xl text-body-md text-on-primary-fixed-variant opacity-80">
+          <div className="text-caption uppercase tracking-wider text-on-primary-fixed-variant opacity-80">
             © 2026 All rights reserved.
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function SiteNav() {
       <div className="mx-auto flex max-w-container-max items-center justify-between px-md py-sm">
         <Link
           href="/"
-          className="text-display-lg font-bold text-primary transition-transform active:scale-95"
+          className="font-montserrat text-headline-sm font-bold tracking-tight text-primary transition-transform active:scale-95"
         >
           AAEC Ltd
         </Link>
